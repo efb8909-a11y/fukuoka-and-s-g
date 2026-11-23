@@ -70,4 +70,416 @@
       word-break: break-word;
       overflow-wrap: anywhere;
     }
-  </style
+  </style>
+</head>
+<body class="pb-24 max-w-md mx-auto min-h-screen relative selection:bg-sageLight">
+
+  <!-- Top Header -->
+  <header class="sticky top-0 z-30 bg-cream/95 backdrop-blur-md border-b border-stone-200/70 px-5 pt-4 pb-3">
+    <div class="flex items-center justify-between">
+      <div>
+        <p class="text-[11px] font-medium tracking-wider text-warmgray uppercase">2026.11.24 (화) — 11.25 (수)</p>
+        <h1 class="text-lg font-bold text-charcoal tracking-tight mt-0.5">후쿠오카 1박 2일 가이드</h1>
+      </div>
+      <span class="px-2.5 py-1 rounded-full text-xs font-medium bg-sageLight text-[#4A6358] border border-sage/30">
+        첫 혼자 여행
+      </span>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="px-4 pt-4 space-y-4">
+
+    <!-- ==================== TAB 1: 1일차 ==================== -->
+    <section id="tab-day1" class="tab-content active space-y-4">
+      <!-- Flight & Hotel Summary Card -->
+      <div class="bg-white rounded-2xl p-4 card-shadow border border-stone-100">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-xs font-semibold px-2.5 py-0.5 rounded-md bg-pastelBlueLight text-[#46687D]">1일차 · 11월 24일 (화)</span>
+          <span class="text-xs text-warmgray">티웨이 TW215</span>
+        </div>
+        <div class="flex items-center justify-between bg-cream rounded-xl p-3 mb-3">
+          <div class="text-center">
+            <p class="text-xs text-warmgray">대구 (TAE)</p>
+            <p class="text-base font-bold text-charcoal mt-0.5">17:50</p>
+          </div>
+          <div class="flex-1 px-3 flex flex-col items-center">
+            <span class="text-[11px] text-warmgray mb-1">약 1시간 10분</span>
+            <div class="w-full h-[1px] bg-stone-300 relative">
+              <span class="w-1.5 h-1.5 rounded-full bg-pastelBlue absolute -top-[2.5px] right-0"></span>
+            </div>
+          </div>
+          <div class="text-center">
+            <p class="text-xs text-warmgray">후쿠오카 (FUK)</p>
+            <p class="text-base font-bold text-charcoal mt-0.5">19:00</p>
+          </div>
+        </div>
+        <div class="border-t border-stone-100 pt-3">
+          <p class="text-xs text-warmgray">숙소 (체크인 15:00~ / 20:30경 도착 예상)</p>
+          <p class="text-sm font-bold text-charcoal mt-0.5">Hotel Oriental Express Fukuoka Nakasukawabata</p>
+          <p class="text-xs text-warmgray mt-0.5">〒812-0026 福岡県福岡市博多区上川端町6-26</p>
+          <div class="mt-2.5 flex flex-wrap gap-2">
+            <a href="https://www.google.com/maps/search/?api=1&query=Hotel+Oriental+Express+Fukuoka+Nakasukawabata" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-xs font-medium px-3 py-1.5 rounded-lg bg-sageLight text-[#466155] active:scale-95 transition">
+              <span>📍 구글 지도 열기</span>
+            </a>
+            <button onclick="openCardModal('호텔 주소를 기사님께 보여주기', 'ホテルオリエンタルエクスプレス福岡中洲川端までお願いします。', '호테루 오리엔타루 에쿠스푸레스 후쿠오카 나카스카와바타 마데 오네가이시마스', '住所: 福岡市博多区上川端町6-26 (나카스카와바타역 7번 출구 인근)')" class="inline-flex items-center gap-1 text-xs font-medium px-3 py-1.5 rounded-lg bg-pastelBlueLight text-[#46687D] active:scale-95 transition">
+              <span>🚕 택시 기사님용 주소 카드</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Google Maps Korean Guide Tip -->
+      <div class="bg-pastelBlueLight/70 rounded-2xl p-3.5 border border-pastelBlue/30">
+        <p class="text-xs font-bold text-[#3C5C70] mb-1">💡 초보자를 위한 구글 지도 길찾기 팁</p>
+        <p class="text-xs text-charcoal/85 leading-relaxed">
+          구글 지도 앱에서 목적지를 검색한 뒤 파란색 <b>[경로]</b> → 사람 모양 <b>[도보]</b> 또는 지하철 모양 <b>[대중교통]</b>을 누르세요. 일본어 안내가 나오면 화면 위쪽 <b>[번역]</b>을 누르거나, 지도에 표시되는 <b>파란색 점선(도보)</b>과 <b>출구 번호(예: 7번 출구)</b>만 따라 걸으면 길을 잃지 않습니다.
+        </p>
+      </div>
+
+      <!-- Detailed Arrival & Transit Step-by-step -->
+      <div class="bg-white rounded-2xl p-4 card-shadow border border-stone-100 space-y-4">
+        <div class="flex items-center justify-between">
+          <h2 class="text-sm font-bold text-charcoal">1. 입국 후 공항 → 숙소 상세 이동법</h2>
+          <span class="text-[11px] px-2 py-0.5 rounded bg-cream text-warmgray">순서대로 따라하기</span>
+        </div>
+
+        <div class="relative pl-4 border-l-2 border-sage/50 space-y-4">
+          <div>
+            <p class="text-xs font-bold text-[#4A6358]">STEP 1. 비행기 하차 → 입국심사 → 짐 찾기 (19:00~19:40)</p>
+            <p class="text-xs text-warmgray mt-1 leading-relaxed">
+              1) 비행기에서 내려 사람들이 걸어가는 방향(<b>Arrival / 到着</b> 표지판)만 따라 직진합니다.<br/>
+              2) <b>입국심사(Immigration)</b> 줄에 서서 여권과 Visit Japan Web QR코드를 보여주고 지문·얼굴 촬영을 합니다.<br/>
+              3) 에스컬레이터를 타고 내려가 전광판에서 <b>TW215</b> 편명이 적힌 벨트 번호를 찾아 캐리어를 찾습니다.<br/>
+              4) <b>세관(Customs)</b> 통과 후 자동문이 열리면 <b>국제선 터미널 1층 도착 로비</b>입니다.
+            </p>
+          </div>
+
+          <div>
+            <p class="text-xs font-bold text-[#4A6358]">STEP 2. 이동 방법 선택 (지하철 vs 택시)</p>
+            
+            <!-- Option A: Subway -->
+            <div class="mt-2 bg-cream rounded-xl p-3 border border-stone-200/60">
+              <p class="text-xs font-bold text-charcoal">🚇 방법 A. 무료 셔틀버스 + 지하철 (약 35분 / 260엔)</p>
+              <p class="text-xs text-warmgray mt-1 leading-relaxed">
+                1) 도착 로비 밖으로 나와 <b>왼쪽 방향</b>으로 조금만 걸으면 <b>1번 승강장(국내선행 무료 셔틀버스)</b>이 있습니다. (약 5~8분 간격 운행)<br/>
+                2) 버스를 타고 약 10~15분 이동해 종점인 <b>국내선 터미널(Domestic Terminal)</b>에서 내립니다.<br/>
+                3) 버스 내린 곳 바로 앞 지하철 입구로 내려가 <b>후쿠오카공항역(福岡空港駅)</b> 표지판을 따라갑니다.<br/>
+                4) 매표기에서 한국어 선택 후 <b>260엔 표</b>를 뽑거나, 아이폰 교통카드(Suica/ICOCA)를 찍고 개찰구를 통과합니다.<br/>
+                5) <b>공항선(주황색 노선 · 하카타/텐진/메이노하마 방면)</b> 열차를 타고 <b>4정거장(약 9분)</b> 이동 후 <b>나카스카와바타역(中洲川端駅)</b>에서 내립니다.<br/>
+                6) 개찰구를 나와 <b>7번 출구(가와바타 상점가 방면)</b> 계단 또는 엘리베이터로 올라옵니다.<br/>
+                7) 7번 출구로 나와 바로 앞 아케이드(가와바타 상점가) 안쪽으로 <b>도보 2분(약 150m)</b> 직진하면 오른쪽에 호텔 입구가 보입니다.
+              </p>
+            </div>
+
+            <!-- Option B: Taxi -->
+            <div class="mt-2.5 bg-pastelBlueLight/50 rounded-xl p-3 border border-pastelBlue/30">
+              <div class="flex items-center justify-between">
+                <p class="text-xs font-bold text-[#3C5C70]">🚕 방법 B. 국제선에서 바로 택시 타기 (약 15~20분)</p>
+                <span class="text-[11px] font-medium text-[#3C5C70]">약 1,800~2,300엔</span>
+              </div>
+              <p class="text-xs text-charcoal/85 mt-1 leading-relaxed">
+                짐이 무겁거나 밤길이 걱정될 때 가장 편합니다. 국제선 1층 도착 로비 정면 횡단보도를 건너면 <b>택시 승강장(Taxi Stand)</b>이 있습니다. 줄을 서서 차례가 되면 탑승 후 아래 카드를 기사님께 보여주세요. (일본 택시는 뒷문이 자동으로 열리고 닫히니 직접 여닫지 마세요.)
+              </p>
+              <button onclick="openCardModal('택시 기사님께 보여주기 (공항→숙소)', 'ホテルオリエンタルエクスプレス福岡中洲川端までお願いします。', '호테루 오리엔타루 에쿠스푸레스 후쿠오카 나카스카와바타 마데 오네가이시마스', '住所: 福岡市博多区上川端町6-26')" class="mt-2 w-full text-xs font-semibold py-2 rounded-lg bg-white text-[#3C5C70] border border-pastelBlue/40 active:scale-[0.99] transition">
+                📱 기사님께 보여줄 호텔 주소 크게 열기
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <p class="text-xs font-bold text-[#4A6358]">STEP 3. 호텔 체크인 (20:30경 예상)</p>
+            <p class="text-xs text-warmgray mt-1 leading-relaxed">
+              프런트에서 <b>여권</b>과 <b>예약 확인서(바우처)</b>를 보여줍니다. 후쿠오카시 숙박세(1인 1박 200엔)를 현장에서 카드 또는 현금으로 별도 결제한 뒤 객실 키를 받습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dinner, Don Quijote & Night Walk -->
+      <div class="bg-white rounded-2xl p-4 card-shadow border border-stone-100 space-y-3">
+        <h2 class="text-sm font-bold text-charcoal">2. 숙소 도보 5분 내 저녁 혼밥 & 야간 쇼핑</h2>
+        <div class="space-y-2.5">
+          <div class="bg-cream rounded-xl p-3">
+            <div class="flex justify-between items-start">
+              <p class="text-xs font-bold text-charcoal">🍜 이치란 본점 (一蘭 本社総本店)</p>
+              <span class="text-[11px] text-sage font-medium">숙소 도보 3분</span>
+            </div>
+            <p class="text-xs text-warmgray mt-1 leading-relaxed">
+              호텔에서 나와 큰길(쇼와도리) 쪽으로 2분만 걸으면 빨간 간판 건물이 보입니다. 1층 자판기에서 식권을 뽑아 1인 독서실 좌석에서 눈치 보지 않고 편하게 라멘 혼밥이 가능합니다.
+            </p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Ichiran+Main+Shop+Fukuoka" target="_blank" rel="noopener" class="inline-block mt-1.5 text-[11px] font-medium text-[#466155] underline">구글 지도 위치 보기 →</a>
+          </div>
+
+          <div class="bg-cream rounded-xl p-3">
+            <div class="flex justify-between items-start">
+              <p class="text-xs font-bold text-charcoal">🐧 돈키호테 나카스점 (ドン・キホーテ 中洲店)</p>
+              <span class="text-[11px] text-sage font-medium">숙소 도보 4분 · 24시간</span>
+            </div>
+            <p class="text-xs text-warmgray mt-1 leading-relaxed">
+              나카스카와바타역 4번 출구 바로 위 <b>gate's(게이츠) 빌딩 1~2층</b>에 있습니다. 숙소에서 매우 가까워 1일차 밤에 엄마·남동생 간식이나 휴족시간 등을 미리 사두고 숙소에 짐을 두기 좋습니다.
+            </p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Don+Quijote+Nakasu+Fukuoka" target="_blank" rel="noopener" class="inline-block mt-1.5 text-[11px] font-medium text-[#466155] underline">구글 지도 위치 보기 →</a>
+          </div>
+
+          <div class="bg-cream rounded-xl p-3">
+            <div class="flex justify-between items-start">
+              <p class="text-xs font-bold text-charcoal">🏮 가와바타 상점가 & 캐널시티 외곽 산책</p>
+              <span class="text-[11px] text-sage font-medium">숙소 바로 앞</span>
+            </div>
+            <p class="text-xs text-warmgray mt-1 leading-relaxed">
+              숙소 바로 앞 지붕이 덮인 아케이드 상점가입니다. 비가 와도 걷기 좋고, 상점가 끝까지 5분 정도 걸어가면 캐널시티 하카타와 연결됩니다. 편의점(세븐일레븐/로손)도 2분 거리에 있습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Safety & Cautions for Solo Female Traveler -->
+      <div class="bg-peachLight rounded-2xl p-4 border border-peach/50 space-y-2">
+        <div class="flex items-center gap-1.5">
+          <span class="text-sm">⚠️</span>
+          <h2 class="text-sm font-bold text-[#6E4735]">밤 시간 혼자 이동할 때 꼭 피해야 할 곳</h2>
+        </div>
+        <ul class="text-xs text-charcoal/90 space-y-1.5 leading-relaxed list-disc pl-4">
+          <li><b>나카스 강변 남쪽 골목 (나카스 2~4초메 유흥가):</b> 밤 9시 이후 삐끼(호객행위)와 유흥업소 호객꾼이 많습니다. <b>숙소가 있는 상카와바타초(가와바타 상점가 쪽)는 안전하지만</b>, 강을 건너 나카스 안쪽 좁은 골목으로는 혼자 들어가지 마세요.</li>
+          <li><b>포장마차(야타이) 거리:</b> 혼자 방문 시 자릿세나 가격 안내가 불명확한 곳이 일부 있으므로, 가볍게 구경만 하거나 밝은 큰길(쇼와도리·메이지도리) 위주로 이동하세요.</li>
+          <li><b>귀가 동선:</b> 저녁 식사나 돈키호테 쇼핑 후에는 어두운 샛길 대신 <b>나카스카와바타역 출구 또는 가와바타 상점가 큰길</b>을 통해 숙소로 바로 복귀하는 것이 가장 안전합니다.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ==================== TAB 2: 2일차 ==================== -->
+    <section id="tab-day2" class="tab-content space-y-4">
+      <!-- Day 2 Overview -->
+      <div class="bg-white rounded-2xl p-4 card-shadow border border-stone-100">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-semibold px-2.5 py-0.5 rounded-md bg-lavenderLight text-[#545075]">2일차 · 11월 25일 (수)</span>
+          <span class="text-xs text-warmgray">티웨이 TW216</span>
+        </div>
+        <p class="text-sm font-bold text-charcoal">클리닉 방문 → 텐진 굿즈 쇼핑 → 공항 귀국</p>
+        <div class="mt-2.5 flex items-center justify-between bg-cream rounded-xl p-3">
+          <div>
+            <p class="text-[11px] text-warmgray">오전 예약</p>
+            <p class="text-xs font-bold text-charcoal mt-0.5">11:30 오픈클리닉 텐진원</p>
+          </div>
+          <div class="h-6 w-[1px] bg-stone-200"></div>
+          <div class="text-right">
+            <p class="text-[11px] text-warmgray">귀국 항공편 (FUK → TAE)</p>
+            <p class="text-xs font-bold text-charcoal mt-0.5">20:00 출발 → 21:15 도착</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Morning: Hotel -> Clinic -->
+      <div class="bg-white rounded-2xl p-4 card-shadow border border-stone-100 space-y-3">
+        <div class="flex items-center justify-between">
+          <h2 class="text-sm font-bold text-charcoal">1. 숙소 → 슬림클리닉 (11:30 예약) 상세 동선</h2>
+          <span class="text-[11px] px-2 py-0.5 rounded bg-lavenderLight text-[#545075]">10:45 출발 추천</span>
+        </div>
+
+        <div class="bg-cream rounded-xl p-3 space-y-1">
+          <p class="text-xs font-bold text-charcoal">오픈클리닉 텐진원 (オープンクリーニック 天神院)</p>
+          <p class="text-xs text-warmgray">〒810-0001 福岡県福岡市中央区天神1-2-12 メットライフ天神ビル 4F</p>
+          <p class="text-[11px] text-[#545075]">※ 텐진 중앙공원 바로 옆 '메트라이프 텐진 빌딩(MetLife Tenjin Bldg)' 4층</p>
+        </div>
+
+        <div class="relative pl-4 border-l-2 border-lavender space-y-3">
+          <div>
+            <p class="text-xs font-bold text-[#545075]">STEP 1. 체크아웃 후 캐리어 맡기기 (10:35)</p>
+            <p class="text-xs text-warmgray mt-0.5 leading-relaxed">
+              체크아웃을 마친 뒤 프런트 직원에게 <b>"짐을 맡길 수 있을까요?"</b> 카드를 보여주고 캐리어를 호텔에 무료 보관합니다. (텐진에서 쇼핑 후 숙소로 돌아와 짐을 찾아 공항으로 가는 동선이 가장 편합니다.)
+            </p>
+          </div>
+
+          <div>
+            <p class="text-xs font-bold text-[#545075]">STEP 2. 숙소에서 클리닉까지 이동하기 (3가지 방법)</p>
+            
+            <div class="mt-1.5 bg-cream rounded-xl p-3 space-y-2">
+              <p class="text-xs font-bold text-charcoal">🚶 방법 A. 도보 이동 (가장 추천 · 약 13~15분)</p>
+              <p class="text-xs text-warmgray leading-relaxed">
+                지하철 환승보다 걷는 게 훨씬 간단합니다.<br/>
+                1) 호텔 정문에서 나와 왼쪽(가와바타 상점가)으로 2분 걸어 <b>나카스카와바타역 7번 출구</b> 앞 큰길(메이지도리)로 나옵니다.<br/>
+                2) 왼쪽(텐진 방면)으로 꺾어 나카스 다리(후쿠하쿠 데아이 다리 또는 니시오하시)를 건너 계속 직진합니다.<br/>
+                3) 왼쪽에 잔디밭이 있는 <b>텐진 중앙공원</b>이 보이면 공원 바로 옆 갈색/유리 외관의 <b>메트라이프 텐진 빌딩</b> 1층으로 들어가 엘리베이터로 <b>4층</b>에 올라갑니다.
+              </p>
+            </div>
+
+            <div class="mt-2 bg-cream rounded-xl p-3 space-y-1">
+              <p class="text-xs font-bold text-charcoal">🚇 방법 B. 지하철 이용 (약 12분 · 210엔)</p>
+              <p class="text-xs text-warmgray leading-relaxed">
+                <b>나카스카와바타역</b>에서 공항선(텐진 방면) 탑승 → 1정거장 뒤 <b>텐진역</b> 하차 → <b>텐진 지하가 동쪽(East) 통로</b>를 따라 남쪽 끝 <b>16번 출구(텐진 중앙공원 방면)</b>로 나오면 도보 2분 거리입니다.
+              </p>
+            </div>
+
+            <div class="mt-2 bg-pastelBlueLight/50 rounded-xl p-3 border border-pastelBlue/30">
+              <div class="flex items-center justify-between">
+                <p class="text-xs font-bold text-[#3C5C70]">🚕 방법 C. 택시 이용 (약 5~7분)</p>
+                <span class="text-[11px] font-medium text-[#3C5C70]">약 800~1,100엔</span>
+              </div>
+              <p class="text-xs text-charcoal/85 mt-1 leading-relaxed">
+                숙소 앞 큰길(쇼와도리)에서 빈 택시(앞유리에 빨간색 <b>空車</b> 표시)를 세워 아래 주소를 보여주면 빌딩 바로 앞에 내려줍니다.
+              </p>
+              <button onclick="openCardModal('택시 기사님께 보여주기 (숙소→클리닉)', '天神1丁目のメットライフ天神ビルまでお願いします。', '텐진 잇초메노 멧토라이후 텐진 비루 마데 오네가이시마스', '住所: 福岡市中央区天神1-2-12 (天神中央公園の隣)')" class="mt-2 w-full text-xs font-semibold py-2 rounded-lg bg-white text-[#3C5C70] border border-pastelBlue/40 active:scale-[0.99] transition">
+                📱 기사님께 보여줄 클리닉 주소 열기
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-1 flex gap-2">
+          <a href="https://www.google.com/maps/search/?api=1&query=MetLife+Tenjin+Building+1-2-12+Tenjin+Chuo+Ward+Fukuoka" target="_blank" rel="noopener" class="flex-1 text-center text-xs font-medium py-2 rounded-lg bg-lavenderLight text-[#4A466B] active:scale-95 transition">
+            📍 구글 지도 길찾기
+          </a>
+          <button onclick="openCardModal('클리닉 예약 확인 보여주기', '11時30分に予約したソン・ジョンアです。', '쥬이치지 산쥽뿐니 요야쿠시타 손 정아 데스', '11시 30분에 예약한 손정아입니다.')" class="flex-1 text-center text-xs font-medium py-2 rounded-lg bg-cream text-charcoal border border-stone-200 active:scale-95 transition">
+            🗣️ 접수 카드 열기
+          </button>
+        </div>
+      </div>
+
+      <!-- Afternoon: Goods & Sweets Spots (Sorted by closeness to Hotel/Tenjin route) -->
+      <div class="bg-white rounded-2xl p-4 card-shadow border border-stone-100 space-y-3">
+        <div class="flex items-center justify-between">
+          <h2 class="text-sm font-bold text-charcoal">2. 숙소·클리닉 근처 치이카와·리락쿠마 & 고구마 스틱</h2>
+          <span class="text-[11px] text-warmgray">가까운 순</span>
+        </div>
+        <p class="text-xs text-warmgray leading-relaxed">
+          클리닉에서 숙소로 돌아가는 길목(텐진 지하가 → 텐진 로프트 → 파르코 → 숙소) 순서대로 들르면 동선 낭비가 전혀 없습니다.
+        </p>
+
+        <div class="space-y-2.5">
+          <!-- Spot 1: Imoya Kinjiro -->
+          <div class="bg-cream rounded-xl p-3 border border-peach/40">
+            <div class="flex justify-between items-center">
+              <p class="text-xs font-bold text-charcoal">🍠 이모야킨지로 텐진점 (芋屋金次郎 天神店)</p>
+              <span class="text-[11px] font-medium text-[#8C583A]">숙소 도보 10분 · 클리닉 3분</span>
+            </div>
+            <p class="text-xs text-warmgray mt-1 leading-relaxed">
+              <b>위치:</b> 클리닉 바로 옆 <b>텐진 지하가 동쪽 11번가(東11番街)</b> 안 (10:00~20:00)<br/>
+              <b>찾아가는 법:</b> 클리닉 건물에서 나와 바로 앞 텐진 지하가 계단으로 내려가면 2분 거리입니다. 매장 안에서 직접 튀기는 <b>'갓 튀긴 이모켄피(揚げたて芋けんぴ)'</b>와 엄마 선물용 소포장 고구마 스틱을 살 수 있습니다.
+            </p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Imoya+Kinjiro+Tenjin+Fukuoka" target="_blank" rel="noopener" class="inline-block mt-1.5 text-[11px] font-medium text-[#8C583A] underline">구글 지도 보기 →</a>
+          </div>
+
+          <!-- Spot 2: Tenjin Loft -->
+          <div class="bg-cream rounded-xl p-3">
+            <div class="flex justify-between items-center">
+              <p class="text-xs font-bold text-charcoal">🛍️ 텐진 로프트 (天神ロフト · 미나 텐진 4층)</p>
+              <span class="text-[11px] font-medium text-[#466155]">숙소 도보 10분 · 클리닉 6분</span>
+            </div>
+            <p class="text-xs text-warmgray mt-1 leading-relaxed">
+              <b>위치:</b> 미나 텐진(mina天神) 건물 4층 (10:00~20:00)<br/>
+              <b>찾아가는 법:</b> 텐진 지하가를 따라 북쪽(텐진역 방면)으로 걸어 <b>노스 텐진(mina) 연결 통로</b>로 올라가면 됩니다. 캐릭터 문구·파우치·시즌 한정 치이카와/리락쿠마 잡화가 다양합니다.
+            </p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Tenjin+Loft+mina+Tenjin+Fukuoka" target="_blank" rel="noopener" class="inline-block mt-1.5 text-[11px] font-medium text-[#466155] underline">구글 지도 보기 →</a>
+          </div>
+
+          <!-- Spot 3: Kiddy Land Parco -->
+          <div class="bg-cream rounded-xl p-3">
+            <div class="flex justify-between items-center">
+              <p class="text-xs font-bold text-charcoal">🧸 키디랜드 후쿠오카 파르코점 (本館 8층)</p>
+              <span class="text-[11px] font-medium text-[#466155]">숙소 도보 11분 · 텐진역 직결</span>
+            </div>
+            <p class="text-xs text-warmgray mt-1 leading-relaxed">
+              <b>위치:</b> 후쿠오카 파르코 본관(Main Building) 8층 (10:00~20:30)<br/>
+              <b>찾아가는 법:</b> 지하철 텐진역 7번 출구와 바로 연결됩니다. 8층 에스컬레이터에서 내리면 <b>치이카와 랜드</b>와 <b>리락쿠마 스토어</b> 코너가 크게 모여 있어 인형·키링 쇼핑의 핵심 장소입니다.
+            </p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Kiddy+Land+Fukuoka+Parco" target="_blank" rel="noopener" class="inline-block mt-1.5 text-[11px] font-medium text-[#466155] underline">구글 지도 보기 →</a>
+          </div>
+
+          <!-- Spot 4: Don Quijote Tenjin Main Store -->
+          <div class="bg-cream rounded-xl p-3">
+            <div class="flex justify-between items-center">
+              <p class="text-xs font-bold text-charcoal">🐧 돈키호테 텐진 본점 (ドン・キホーテ 天神本店)</p>
+              <span class="text-[11px] font-medium text-[#466155]">파르코 도보 6분</span>
+            </div>
+            <p class="text-xs text-warmgray mt-1 leading-relaxed">
+              파르코에서 남쪽(니시테츠 텐진역 방면)으로 6분 걸으면 나옵니다. 어제 숙소 앞 나카스점에서 못 산 품목이 있다면 여기서 한 번에 면세 결제(5,500엔 이상) 후 택시나 지하철로 숙소 복귀가 편리합니다.
+            </p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Don+Quijote+Tenjin+Main+Store+Fukuoka" target="_blank" rel="noopener" class="inline-block mt-1.5 text-[11px] font-medium text-[#466155] underline">구글 지도 보기 →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Return to Airport & Departure Step-by-step -->
+      <div class="bg-white rounded-2xl p-4 card-shadow border border-stone-100 space-y-3">
+        <div class="flex items-center justify-between">
+          <h2 class="text-sm font-bold text-charcoal">3. 귀국 동선 및 공항 출국 순서 (20:00 비행기)</h2>
+          <span class="text-[11px] px-2 py-0.5 rounded bg-peachLight text-[#7D533E]">16:50 숙소 출발</span>
+        </div>
+
+        <div class="relative pl-4 border-l-2 border-peach space-y-3.5">
+          <div>
+            <p class="text-xs font-bold text-[#7D533E]">STEP 1. 숙소 복귀 후 짐 정리 (16:20~16:50)</p>
+            <p class="text-xs text-warmgray mt-0.5 leading-relaxed">
+              호텔 프런트에 짐 보관증을 보여주고 캐리어를 찾습니다. <b>액체류(화장품·스킨·젤리·음료 100ml 초과)</b>와 <b>면세로 산 화장품·액체·식료품</b>은 모두 기내 반입이 안 되므로 반드시 <b>큰 캐리어(위탁 수하물)</b> 안에 넣으세요.
+            </p>
+          </div>
+
+          <div>
+            <p class="text-xs font-bold text-[#7D533E]">STEP 2. 숙소 → 후쿠오카 공항 국제선 이동 (16:50~17:30)</p>
+            
+            <div class="mt-1.5 bg-cream rounded-xl p-3">
+              <p class="text-xs font-bold text-charcoal">🚇 지하철 + 무료 셔틀 이용 시 (약 35~40분)</p>
+              <p class="text-xs text-warmgray mt-1 leading-relaxed">
+                1) <b>나카스카와바타역</b>(7번 출구)에서 공항선(후쿠오카공항 방면) 승차 → 종점 <b>후쿠오카공항역</b> 하차.<br/>
+                2) 개찰구 나와 표지판을 따라 <b>국내선 1층 버스 승강장(국제선행 무료 셔틀버스)</b> 탑승 → 종점 <b>국제선 터미널 3층 출발 로비</b> 하차.
+              </p>
+            </div>
+
+            <div class="mt-2 bg-pastelBlueLight/50 rounded-xl p-3 border border-pastelBlue/30">
+              <div class="flex items-center justify-between">
+                <p class="text-xs font-bold text-[#3C5C70]">🚕 택시 이용 시 (쇼핑 짐 많을 때 강추 · 약 15~20분)</p>
+                <span class="text-[11px] font-medium text-[#3C5C70]">약 1,800~2,300엔</span>
+              </div>
+              <p class="text-xs text-charcoal/85 mt-1 leading-relaxed">
+                쇼핑백과 캐리어가 무거울 때는 택시를 타면 셔틀버스 갈아탈 필요 없이 <b>국제선 3층 출발 게이트 바로 앞</b>에 내려줍니다.
+              </p>
+              <button onclick="openCardModal('택시 기사님께 보여주기 (숙소→공항 국제선)', '福岡空港の国際線ターミナルまでお願いします。', '후쿠오카 쿠코노 코쿠사이센 타미나루 마데 오네가이시마스', '후쿠오카 공항 국제선 터미널까지 부탁드립니다.')" class="mt-2 w-full text-xs font-semibold py-2 rounded-lg bg-white text-[#3C5C70] border border-pastelBlue/40 active:scale-[0.99] transition">
+                📱 기사님께 보여줄 국제선 터미널 카드 열기
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <p class="text-xs font-bold text-[#7D533E]">STEP 3. 공항 도착 후 출국 5단계 (17:30~19:30)</p>
+            <p class="text-xs text-warmgray mt-1 leading-relaxed">
+              <b>1) 세관/면세 반출 확인 (수하물 부치기 전!):</b> 면세 구매 내역이 있다면 체크인 카운터 가기 전 세관 카운터(또는 키오스크)에서 여권을 스캔합니다.<br/>
+              <b>2) 체크인 & 위탁 수하물 부치기:</b> 3층 출발 로비 전광판에서 <b>TW216(대구행)</b> 카운터 알파벳을 확인 후 줄을 서서 여권을 내고 캐리어를 부칩니다. (기내 반입 가방에 보조배터리가 들어있는지 확인!)<br/>
+              <b>3) 보안검색(Security Check):</b> 탑승권과 여권을 보여주고 안으로 들어가 외투·노트북·가방을 바구니에 올려 엑스레이 검사를 통과합니다.<br/>
+              <b>4) 출국심사(Immigration):</b> 자동출국심사대 또는 유인 심사대에서 여권을 스캔하고 통과합니다.<br/>
+              <b>5) 탑승구(Gate) 이동:</b> 탑승권에 적힌 <b>Gate 번호</b>와 <b>탑승 시간(보통 19:25~19:30)</b>을 확인한 뒤, 남은 시간 동안 면세점에서 로이스 초콜릿·도쿄바나나 등을 구매하고 탑승합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB 3: 면세 ==================== -->
+    <section id="tab-tax" class="tab-content space-y-4">
+      <!-- 2026 Nov Tax-Free Reform Banner -->
+      <div class="bg-sageLight rounded-2xl p-4 border border-sage/40">
+        <div class="flex items-center gap-2 mb-1.5">
+          <span class="px-2 py-0.5 text-[11px] font-bold rounded bg-sage text-white">2026년 11월 시행</span>
+          <h2 class="text-sm font-bold text-[#364D43]">일본 면세 제도 개편 핵심 안내</h2>
+        </div>
+        <p class="text-xs text-charcoal/90 leading-relaxed">
+          2026년 11월 1일부터 일본 면세 방식이 기존 '매장 즉시 할인'에서 <b>'출국 시 공항 반출 확인 후 환급(선결제 후환급)'</b> 방식으로 개편되었습니다.
+        </p>
+      </div>
+
+      <!-- 3-Step Refund Flow -->
+      <div class="bg-white rounded-2xl p-4 card-shadow border border-stone-100 space-y-3.5">
+        <h3 class="text-sm font-bold text-charcoal">선결제 후환급(리펀드) 3단계 절차</h3>
+        
+        <div class="space-y-3">
+          <div class="bg-cream rounded-xl p-3">
+            <p class="text-xs font-bold text-[#4A6358]">1단계 · 매장 결제 (세금 포함 전액 결제)</p>
+            <p class="text-xs text-warmgray mt-1 leading-relaxed">
+              동일 매장·당일 합산 <b>5,000엔(세전) 이상</b> 구매 시 계산대에서 <b>실물 여권</b>을 제시합니다. 매장에서는 소비세(10%)가 포함된 금액으로 먼저 결제하고, 면세 구매 기록을 전자 전송해 줍니다. (소모품 밀봉 봉투 규정이 폐지되어 일반 포장 가능)
+            </p>
+          </div>
+
+          <div class="bg-cream rounded-xl p-3">
+            <p class="text-xs font-bold text-[#4A6358]">2단계 · 공항 세관 반출 확인 (가장 중요)</p>
+            <p class="text-xs text-warmgray mt-1 leading-relaxed">
+              귀국일 후쿠오카 공
